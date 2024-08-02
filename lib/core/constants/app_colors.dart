@@ -8,6 +8,13 @@ class AppColors{
   static const Color fadedRed = Color(0xffC64949);
   static const Color lightGrey = Color(0xffa1a1a1);
   static const Color underlineInputGrey = Color(0xffe5e5e5);
+  static const Color yellowText = Color(0xffFCC21B);
+  static const Color cardBG = Color(0xffF8F8F8);
+  static const Color lightBronw = Color(0xffCCBDBD);
+  static const Color coldBlue = Color(0xff95BCCC);
+
+
+  
 
 
 
