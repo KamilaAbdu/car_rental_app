@@ -5,6 +5,8 @@ class AppTextStyles {
       TextStyle(fontSize: 10, fontWeight: FontWeight.w400);
   static const TextStyle s11w400 =
       TextStyle(fontSize: 11, fontWeight: FontWeight.w400);
+       static const TextStyle s12w400 =
+      TextStyle(fontSize: 12, fontWeight: FontWeight.w400);
   static const TextStyle s12w700 =
       TextStyle(fontSize: 12, fontWeight: FontWeight.w700);
   static const TextStyle s13w700 =
@@ -27,4 +29,6 @@ class AppTextStyles {
       TextStyle(fontSize: 26, fontWeight: FontWeight.w600);
   static const TextStyle s48w400 =
       TextStyle(fontSize: 48, fontWeight: FontWeight.w400);
+  static const TextStyle s160w400 =
+      TextStyle(fontSize: 160, fontWeight: FontWeight.w400);
 }

@@ -5,6 +5,7 @@ import 'package:practice_app/core/constants/app_colors.dart';
 import 'package:practice_app/core/constants/app_dimens.dart';
 import 'package:practice_app/core/constants/app_text_styles.dart';
 import 'package:practice_app/features/car_rental/models/car_model.dart';
+import 'package:practice_app/features/presentation/pages/cars_page.dart';
 import 'package:practice_app/features/presentation/widgets/custom_car_card.dart';
 import 'package:practice_app/features/presentation/widgets/main_banner.dart';
 import 'package:practice_app/features/presentation/widgets/main_choise_chip.dart';
@@ -21,10 +22,38 @@ List<String> labels = ['Family cars', 'Cheap cars', 'Luxury cars'];
 int currentLabel = 0;
 
 List<CarModels> dataCars = [
-  CarModels(image: AppAssets.toyota, price: 300, title: 'TOYOTA'),
-  CarModels(image: AppAssets.lamborgini, price: 550, title: 'Lamborgini'),
-  CarModels(image: AppAssets.rangeRover, price: 150, title: 'Range Rover'),
-  CarModels(image: AppAssets.tesla, price: 150, title: 'Tesla'),
+  CarModels(
+      image: AppAssets.toyota,
+      price: 300,
+      title: 'TOYOTA',
+      transition: 'Automatic',
+      speed: '220kmph',
+      year: '2021',
+      owner: 'Edward Callin'),
+  CarModels(
+      image: AppAssets.lamborgini,
+      price: 550,
+      title: 'Lamborgini',
+      transition: 'Automatic',
+      speed: '180kmph',
+      year: '2020',
+      owner: 'Bella Swan'),
+  CarModels(
+      image: AppAssets.rangeRover,
+      price: 200,
+      title: 'Range Rover',
+      transition: 'Automatic',
+      speed: '200kmph',
+      year: '2022',
+      owner: 'Michael Johns'),
+  CarModels(
+      image: AppAssets.tesla,
+      price: 150,
+      title: 'Tesla',
+      transition: 'Automatic',
+      speed: '160kmph',
+      year: '2024',
+      owner: 'Cammie Ace'),
 ];
 
 class _MainPageState extends State<MainPage> {
@@ -122,7 +151,13 @@ class _MainPageState extends State<MainPage> {
                     title: dataCars[index].title,
                     price: dataCars[index].price,
                     image: dataCars[index].image,
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  CarsPage(data: dataCars[index])));
+                    },
                   );
                 },
               ),

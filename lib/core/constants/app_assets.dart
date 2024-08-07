@@ -7,6 +7,6 @@ class AppAssets {
   static const String mainBanner = 'assets/images/main_pg_banner.png';
   static const String toyota = 'assets/images/toyota.png';
   static const String lamborgini = 'assets/images/lamborgini.png';
-  static const String rangeRover = 'assets/images/range_rover.png';
+  static const String rangeRover = 'assets/images/range_rover_transparent.png';
   static const String tesla = 'assets/images/tesla.png';
 }
